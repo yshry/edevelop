@@ -6,3 +6,7 @@ localhost
 
 [dbserver]
 10.0.71.13
+
+[servers:children]
+wbserver
+dbserver
