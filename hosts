@@ -1,5 +1,5 @@
 [localhost]
-localhost
+localhost ansible_connection=local
 
 [wbserver]
 10.0.71.12
