@@ -1,0 +1,8 @@
+[localhost]
+localhost
+
+[wbserver]
+10.0.71.12
+
+[dbserver]
+10.0.71.13
