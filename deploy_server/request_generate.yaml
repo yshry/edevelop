@@ -3,8 +3,8 @@
     name: Apache
     description: Apache Server
     imageid: 2247ac70-ec24-42fc-af0d-0e423199c0b9
-	server_password: P@ssw0rd123
-	private_ip: 10.0.71.51
+    server_password: P@ssw0rd123
+    private_ip: 10.0.71.51
   tasks:
   - name: copy template and replace variable
     file: path=./temp.xml state=absent
