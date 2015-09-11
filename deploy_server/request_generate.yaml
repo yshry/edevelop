@@ -10,10 +10,7 @@
   tasks:
     - file: path=./temp.xml state=absent
     - copy: src=./request.xml dest=./temp.xml owner=jenkins group=jenkins mode=0755
-    - replace: >-
-      dest='./temp.xml'
-      regexp='{{ item.regexp }}'
-      replace='{{ item.replace }}'
+    - replace: dest=./temp.xml regexp='{{ item.regexp }}' replace='{{ item.replace }}'
       with_items:
       - regexp: 'SERVERNAME'
         replace: '{{ name }}'
