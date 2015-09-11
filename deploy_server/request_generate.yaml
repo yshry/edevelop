@@ -15,12 +15,12 @@
       replace='{{ item.replace }}'
     with_items:
     - regexp: 'SERVERNAME'
-      replace: {{ name }}
+      replace: '{{ name }}'
     - regexp: 'DESCRIPTION'
-      replace: {{ description }}
+      replace: '{{ description }}'
     - regexp: 'SOURCEIMAGEID'
-      replace: {{  imageid  }}
+      replace: '{{  imageid  }}'
     - regexp: 'VMPASSWORD'
-      replace: {{ server_password }}
+      replace: '{{ server_password }}'
     - regexp: 'PRIVATEIP'
-      replace: {{ private_ip }}
+      replace: '{{ private_ip }}'
