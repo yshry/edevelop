@@ -10,4 +10,9 @@
     imageid: 2247ac70-ec24-42fc-af0d-0e423199c0b9
   tasks:
   - name: deploy a server
-    get_url: url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer dest=./deployresult url_username={{ user }} url_password={{ password }}
+    uri:
+      url: https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer
+      method: POST
+      force_basic_auth: yes
+      user: {{ user }}
+      password: {{ password }}
