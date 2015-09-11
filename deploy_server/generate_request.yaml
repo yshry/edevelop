@@ -1,5 +1,5 @@
 ---
-- name: generate a request body for REST API
+#- name: generate a request body for REST API
 - hosts: localhost
   vars:
     name: Apache

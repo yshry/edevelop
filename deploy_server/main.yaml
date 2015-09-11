@@ -1,6 +1,3 @@
 ---
-
-- hosts:localhost
-
 - include: generate_request.yaml
 - include: deploy_server.yaml

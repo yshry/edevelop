@@ -1,5 +1,5 @@
 ---
-- name: send server deploy request
+#- name: send server deploy request
 - hosts: localhost
   vars:
     cloudapiurl: api-au.dimensiondata.com
