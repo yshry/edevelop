@@ -1,2 +1,4 @@
-- name: generate request body
-  action: copy src=./request.xml dest=./temp.xml owner=jenkins group=jenkins mode=0755
+- hosts: localhost
+  tasks
+  - name: generate request body
+    copy: src=./request.xml dest=./temp.xml owner=jenkins group=jenkins mode=0755
