@@ -1,4 +1,6 @@
 ---
+- include: request_generate.yaml
+
 - hosts: localhost
   vars:
     cloudapiurl: api-au.dimensiondata.com
