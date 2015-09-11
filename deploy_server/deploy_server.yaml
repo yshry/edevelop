@@ -11,5 +11,6 @@
     imageid: 2247ac70-ec24-42fc-af0d-0e423199c0b9
   tasks:
   - name: deploy a server
-    action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body_format=raw body="{{ lookup('file','./temp.xml') }}
+    action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body_format=raw
+#body="{{ lookup('file','./temp.xml') }}
 
