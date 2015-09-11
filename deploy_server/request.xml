@@ -1,0 +1,20 @@
+<DeployServer xmlns="http://oec.api.opsource.net/schemas/server">
+<!-- mandatory, string, max 75 chars -->
+<name>My Server</name>
+<!-- optional, string, max 255 chars -->
+<description>This is my server</description>
+<!-- mandatory, string, source image id -->
+<imageId>sourceImageId</imageId>
+<!-- mandatory, "false" or "true" -->
+<start>false</start>
+<!-- optional depending on image and OS type, see above. If supplied must
+be at least 8 chars in length and cannot include "<" or ">" -->
+<administratorPassword>M@#GG777eW!</administratorPassword>
+<!-- NB either privateIp or networkId must be provided -->
+<privateIp>10.0.1.5</privateIp>
+<!-- optional, a disk element can be provided for any, some or all disks.
+Available disk speeds are listed on the List Data Centers (with Parameters) -
+Maintenance function. -->
+<disk scsiId="0" speed="ECONOMY"/>
+<disk scsiId="2" speed="HIGHPERFORMANCE"/>
+</DeployServer>
