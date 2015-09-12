@@ -7,7 +7,7 @@
     user: dev1-yasuhiro.yao
     password: Zettai23
   tasks:
-  - name: deploy a server
-    debug: var="{{ lookup('file', './temp.xml') }}"
-    action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="{{ lookup('file','./temp.xml') }}"
+#- name: deploy a server
+  - debug: var="{{ lookup('file', './temp.xml') }}"
+  - action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="{{ lookup('file','./temp.xml') }}"
 
