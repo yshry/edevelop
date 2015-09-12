@@ -6,9 +6,9 @@
     orgid: e2c43389-90de-4498-b7d0-056e8db0b381
     user: dev1-yasuhiro.yao
     password: Zettai23
-    req_body: "{{ lookup('file', './temp.xml') }}"
+    req_body: {{ lookup('file', './temp.xml') }}
   tasks:
-  - debug: var={{ req_body }}
+  - debug: "var={{ req_body }}"
   - name: deploy a server
     action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="{{ req_body }}"
 
