@@ -8,6 +8,7 @@
     password: Zettai23
     req_body: "{{ lookup('file', './temp.xml') }}"
   tasks:
+  - debug: var={{ req_body }}
   - name: deploy a server
-    action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body={{ req_body }}
+    action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="{{ req_body }}"
 
