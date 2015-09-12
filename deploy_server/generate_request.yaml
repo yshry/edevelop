@@ -22,5 +22,5 @@
         replace: '{{ server_password }}'
       - regexp: 'PRIVATEIP'
         replace: '{{ private_ip }}'
-      - regexp: '\\n'
-        replace''
+#      - regexp: '\\n'
+#        replace''
