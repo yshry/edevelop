@@ -1,9 +1,1 @@
-<DeployServer xmlns="http://oec.api.opsource.net/schemas/server">
-<name>SERVERNAME</name>
-<description>DESCRIPTION</description>
-<imageId>SOURCEIMAGEID</imageId>
-<start>true</start>
-<administratorPassword>VMPASSWORD</administratorPassword>
-<privateIp>PRIVATEIP</privateIp>
-<disk scsiId="0" speed="ECONOMY"/>
-</DeployServer>
+<DeployServer xmlns="http://oec.api.opsource.net/schemas/server"><name>SERVERNAME</name><description>DESCRIPTION</description><imageId>SOURCEIMAGEID</imageId><start>true</start><administratorPassword>VMPASSWORD</administratorPassword><privateIp>PRIVATEIP</privateIp><disk scsiId="0" speed="ECONOMY"/></DeployServer>
