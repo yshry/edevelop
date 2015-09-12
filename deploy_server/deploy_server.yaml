@@ -6,7 +6,7 @@
     orgid: e2c43389-90de-4498-b7d0-056e8db0b381
     user: dev1-yasuhiro.yao
     password: Zettai23
-    req_body: {{ lookup('file', './temp.xml') }}
+    req_body: "{{ lookup('file', './temp.xml') }}"
   tasks:
   - debug: "var={{ req_body }}"
   - name: deploy a server
