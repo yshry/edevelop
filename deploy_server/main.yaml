@@ -1,3 +1,4 @@
 ---
 #- include: generate_request.yaml
 - include: deploy_server.yaml
+- include: wait_server_deploy.yaml

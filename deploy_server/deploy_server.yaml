@@ -6,7 +6,7 @@
     description: Apache Server
     imageid: 2247ac70-ec24-42fc-af0d-0e423199c0b9
     server_password: P@ssw0rd123
-    private_ip: 10.0.71.51
+    private_ip: {{ wbserver_ip }}
     cloudapiurl: api-au.dimensiondata.com
     orgid: e2c43389-90de-4498-b7d0-056e8db0b381
     user: dev1-yasuhiro.yao
@@ -14,4 +14,5 @@
   tasks:
   - name: deploy a server
     action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer HEADER_Content-type="application/xml" method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="<DeployServer xmlns=\"http://oec.api.opsource.net/schemas/server\"><name>{{ name }}</name><description>{{ description }}</description><imageId>{{ imageid }}</imageId><start>true</start><administratorPassword>{{ server_password }}</administratorPassword><privateIp>{{ private_ip }}</privateIp><disk scsiId=\"0\" speed=\"ECONOMY\"/></DeployServer>"
+
 

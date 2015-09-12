@@ -1,0 +1,8 @@
+---
+#- name: send server deploy request
+- hosts: localhost
+  vars:
+    target: {{ wbserver_ip }}
+  tasks:
+  - name: wait for server deploy
+    command: bash ./pingloop.sh {{ target }}
