@@ -1,19 +1,9 @@
 <DeployServer xmlns="http://oec.api.opsource.net/schemas/server">
-<!-- mandatory, string, max 75 chars -->
 <name>SERVERNAME</name>
-<!-- optional, string, max 255 chars -->
 <description>DESCRIPTION</description>
-<!-- mandatory, string, source image id -->
 <imageId>SOURCEIMAGEID</imageId>
-<!-- mandatory, "false" or "true" -->
 <start>true</start>
-<!-- optional depending on image and OS type, see above. If supplied must
-be at least 8 chars in length and cannot include "<" or ">" -->
 <administratorPassword>VMPASSWORD</administratorPassword>
-<!-- NB either privateIp or networkId must be provided -->
 <privateIp>PRIVATEIP</privateIp>
-<!-- optional, a disk element can be provided for any, some or all disks.
-Available disk speeds are listed on the List Data Centers (with Parameters) -
-Maintenance function. -->
 <disk scsiId="0" speed="ECONOMY"/>
 </DeployServer>
