@@ -1,7 +1,7 @@
 
 - hosts: localhost
   tasks:
-    - include: deploy_server.yml\
+    - include: deploy_server.yml
       vars:
         server_name: Apache
         description: Apache Server
