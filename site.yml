@@ -1,8 +1,8 @@
 tasks:
   - include: deploy_server.yml
-    vars:
-	  server_name: Apache
-	  description: Apache Server
-	  image_id: 2247ac70-ec24-42fc-af0d-0e423199c0b9
-	  server_password: P@ssw0rd123
-	  private_ip: "{{ wbserver_ip }}"
+  vars:
+    server_name: Apache
+    description: Apache Server
+    image_id: 2247ac70-ec24-42fc-af0d-0e423199c0b9\
+    server_password: P@ssw0rd123
+    private_ip: "{{ wbserver_ip }}"
