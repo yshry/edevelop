@@ -1,10 +1,26 @@
-
 - hosts: localhost
   tasks:
-    - include: deploy_server.yml
+    - name: deploy web server
+      include: deploy_server.yml
       vars:
         server_name: Apache
         description: Apache Server
         image_id: 2247ac70-ec24-42fc-af0d-0e423199c0b9
         server_password: P@ssw0rd123
         private_ip: "{{ wbserver_ip }}"
+    - name: deploy db server
+      include: deploy_server.yml
+      vars:
+        server_name: mysql server
+        description: mysql server
+        image_id: 2247ac70-ec24-42fc-af0d-0e423199c0b9
+        server_password: P@ssw0rd123
+        private_ip: "{{ dbserver_ip }}"
+    - name: wait for web server deploy
+      include: wait_server_deploy.yml
+      vars:
+        target:{{ wbserver_ip }}
+    - name: wait for db server deploy
+      include: wait_server_deploy.yml
+      vars:
+        target:{{ dbserver_ip }}
