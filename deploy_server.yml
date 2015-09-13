@@ -6,5 +6,5 @@
 #private_ip: (e.g. 10.0.71.51)
 
 - name: deploy a server
-  action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer HEADER_Content-type="application/xml" method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="<DeployServer xmlns=\"http://oec.api.opsource.net/schemas/server\"><name>{{ item:server_name }}</name><description>{{ item:description }}</description><imageId>{{ imtem:image_id }}</imageId><start>true</start><administratorPassword>{{ item:server_password }}</administratorPassword><privateIp>{{ item:private_ip }}</privateIp><disk scsiId=\"0\" speed=\"ECONOMY\"/></DeployServer>"
+  action: uri url=https://{{ cloudapiurl }}/oec/0.9/{{ orgid }}/deployServer HEADER_Content-type="application/xml" method=POST force_basic_auth=yes user={{ user }} password={{ password }} body="<DeployServer xmlns=\"http://oec.api.opsource.net/schemas/server\"><name>{{ server_name }}</name><description>{{ description }}</description><imageId>{{ image_id }}</imageId><start>true</start><administratorPassword>{{ server_password }}</administratorPassword><privateIp>{{ private_ip }}</privateIp><disk scsiId=\"0\" speed=\"ECONOMY\"/></DeployServer>"
 
