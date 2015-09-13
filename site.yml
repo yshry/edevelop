@@ -19,8 +19,8 @@
     - name: wait for web server deploy
       include: wait_server_deploy.yml
       vars:
-        target:{{ wbserver_ip }}
+        target: "{{ wbserver_ip }}"
     - name: wait for db server deploy
       include: wait_server_deploy.yml
       vars:
-        target:{{ dbserver_ip }}
+        target: "{{ dbserver_ip }}"
