@@ -1,0 +1,5 @@
+---
+#required vars
+#target: "{{ wbserver_ip }}"
+- name: wait for server deploy
+  command: bash ./pingloop.sh {{ target }}
