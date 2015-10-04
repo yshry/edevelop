@@ -1,7 +1,6 @@
 ---
 - name: Deploy infrastructure
   hosts: localhost
-  remote_user: root
   vars: 
    username: dev1-yasuhiro.yao
    password: Zettai23
@@ -10,6 +9,8 @@
    network_name: test_NeT
    location: NA12
    network_domain_id: dae6270e-bea6-4153-9ed5-2add07416ba8
+   private_ipv4: 10.0.3.0
+   prefix_size: 24
 
   roles:
    - infrastructure

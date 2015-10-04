@@ -6,4 +6,4 @@
    user: "{{ username }}"
    password: "{{ password }}"
    HEADER_Content-Type: "application/json"
-   body: "\{\"networkDomainId": \"{{ network_domain_id }}\",\"name\": \"{{ network_name }}\", \"privateIpv4BaseAddress\": \"{{ private_ipv4 }}\", \"privateIpv4PrefixSize\": {{ prefix_size }} \}"
+   body: "{\"networkDomainId": \"{{ network_domain_id }}\",\"name\": \"{{ network_name }}\", \"privateIpv4BaseAddress\": \"{{ private_ipv4 }}\", \"privateIpv4PrefixSize\": {{ prefix_size }} }"
