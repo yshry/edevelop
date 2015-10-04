@@ -1,9 +1,8 @@
 [localhost]
 localhost ansible_connection=local
 
-[RED]
-10.0.16.15
-10.0.16.13
-
-[BLUE]
-10.0.16.25
+[localhost:vars]
+username=dev1-yasuhiro.yao
+password=Zettai23
+org_id=e2c43389-90de-4498-b7d0-056e8db0b381
+api_url=api-na.dimensiondata.com

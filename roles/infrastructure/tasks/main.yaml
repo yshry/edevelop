@@ -1,2 +1,3 @@
 ---
 - include: network.yaml
+- include: server.yaml

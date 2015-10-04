@@ -1,16 +1,15 @@
 ---
 - name: Deploy infrastructure
   hosts: localhost
-  vars: 
-   username: dev1-yasuhiro.yao
-   password: Zettai23
-   org_id: e2c43389-90de-4498-b7d0-056e8db0b381
-   api_url: api-na.dimensiondata.com
-   network_name: test_NeT
-   location: NA12
+  vars:
+   network_name: demo_network
    network_domain_id: dae6270e-bea6-4153-9ed5-2add07416ba8
-   private_ipv4: 10.0.3.0
-   prefix_size: 24
+   network_private_ipv4: 10.0.3.0
+   network_prefix_size: 24
+   server_name: demo_server
+   server_image_id: a4a9e831-1d0d-4d55-a772-9f490e11955e
+   server_admin_pass: P@ssw0rd
+   server_private_ipv4: 10.0.3.1
 
   roles:
    - infrastructure
