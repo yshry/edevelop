@@ -6,4 +6,4 @@
    user: "{{ username }}"
    password: "{{ password }}"
    HEADER_Content-Type: "application/xml"
-   body: "<deployVlan xmlns=\"urn:didata.com:api:cloud:types\"><networkDomainId>{{ network_domain_id }}</networkDomainId><name>{{ network_name }}</name><privateIpv4BaseAddress>{{ private_ipv4 }}</privateIpv4BaseAddress><privateIpv4PrefixSize>{{ prefix_size }}</privateIpv4PrefixSize></deployVlan>"
+   body: "<deployVlan xmlns=\"urn:didata.com:api:cloud:types\"><networkDomainId>{{ network_domain_id }}</networkDomainId><name>{{ network_name }}</name><privateIpv4BaseAddress>{{ network_private_ipv4 }}</privateIpv4BaseAddress><privateIpv4PrefixSize>{{ network_prefix_size }}</privateIpv4PrefixSize></deployVlan>"
