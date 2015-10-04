@@ -9,7 +9,7 @@
    server_name: demo_server
    server_image_id: a4a9e831-1d0d-4d55-a772-9f490e11955e
    server_admin_pass: P@ssw0rd
-   server_private_ipv4: 10.0.3.1
+   server_private_ipv4: 10.0.3.11
 
   roles:
    - infrastructure
