@@ -2,14 +2,14 @@
 - name: Deploy infrastructure
   hosts: localhost
   vars:
-   network_name: demo_network
+   network_name: demo_network2
    network_domain_id: dae6270e-bea6-4153-9ed5-2add07416ba8
-   network_private_ipv4: 10.0.3.0
+   network_private_ipv4: 10.0.5.0
    network_prefix_size: 24
    server_name: demo_server
    server_image_id: a4a9e831-1d0d-4d55-a772-9f490e11955e
    server_admin_pass: P@ssw0rd
-   server_private_ipv4: 10.0.3.15
+   server_private_ipv4: 10.0.5.11
 
   roles:
    - infrastructure
