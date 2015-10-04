@@ -6,5 +6,5 @@
    user: "{{ username }}"
    password: "{{ password }}"
    HEADER_Content-Type: "application/xml"
-   body: "<deployServer xmlns=\"urn:didata.com:api:cloud:types\"><name>{{ server_name }}</name><imageId>{{ server_image_id }}</imageId><start>true</start><administratorPassword>{{ server_admin_pass }}</administratorPassword><networkInfo networkDomainId=\"{{ network_domain_id }}\"><primaryNic><privateIpv4>\"{{ server_private_ipv4 }}\"</privateIpv4></primaryNic></networkInfor><disk scsiId="0" speed="STANDARD"/></deployServer>"
+   body: "<deployServer xmlns=\"urn:didata.com:api:cloud:types\"><name>{{ server_name }}</name><imageId>{{ server_image_id }}</imageId><start>true</start><administratorPassword>{{ server_admin_pass }}</administratorPassword><networkInfo networkDomainId=\"{{ network_domain_id }}\"><primaryNic><privateIpv4>\"{{ server_private_ipv4 }}\"</privateIpv4></primaryNic></networkInfor><disk scsiId=\"0\" speed=\"STANDARD\"/></deployServer>"
 
