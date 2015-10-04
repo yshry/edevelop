@@ -1,19 +1,9 @@
 [localhost]
 localhost ansible_connection=local
 
-[localhost:vars]
-cloudapiurl=api-au.dimensiondata.com
-orgid=e2c43389-90de-4498-b7d0-056e8db0b381
-user=dev1-yasuhiro.yao
-password=Zettai23
-wbserver_ip=10.0.71.51
-dbserver_ip=10.0.71.101
+[RED]
+10.0.16.15
+10.0.16.13
 
-[wbserver]
-10.0.71.51
-
-[dbserver]
-10.0.71.101
-
-[test]
-10.0.0.1
+[BLUE]
+10.0.16.25

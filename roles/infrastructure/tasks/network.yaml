@@ -1,0 +1,9 @@
+---
+- name: Create network
+  uri:
+   url: https://{{ api_url }}/caas/2.0/{{ org_id }}/network/deployVlan
+   method: POST
+   user: "{{ username }}"
+   password: "{{ password }}"
+   HEADER_Content-Type: "application/json"
+   body: "\{\"networkDomainId": \"{{ network_domain_id }}\",\"name\": \"{{ network_name }}\", \"privateIpv4BaseAddress\": \"{{ private_ipv4 }}\", \"privateIpv4PrefixSize\": {{ prefix_size }} \}"
